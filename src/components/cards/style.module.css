@@ -1,0 +1,44 @@
+.card {
+  width: 350px;
+  /* background-color: gray; */
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 2px 0px gray;
+  /* margin: 1rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: all 0.5s ease-in;
+}
+.card:hover {
+  transform: scale(103%);
+}
+.wrap_image {
+  width: 100%;
+}
+.image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  transition: all 0.5s ease-in;
+  color: red;
+}
+.btn:hover {
+  background-color: darkblue;
+  color: white;
+  transform: scale(103%);
+}

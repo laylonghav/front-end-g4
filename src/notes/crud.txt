@@ -1,0 +1,142 @@
+import { useState } from "react";
+import GreetingCard from "./components/cards/GreetingCard";
+import ProductCard from "./components/cards/ProductCard";
+import { Trash } from "lucide-react";
+import LoginPage from "./pages/auth/LoginPage";
+
+const App = () => {
+  const [data, setData] = useState(["Banana", "Apple", "Mengo"]);
+  const [query, setQuery] = useState("");
+  const [search, setSearch] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log("Data : ", query);
+    setData([...data, query]);
+    setQuery("");
+  };
+
+  const onDelete = (item, index) => {
+    setData(data.filter((_, index1) => index1 !== index));
+    console.log("Item delete: ", item);
+    console.log("Index delete: ", index);
+  };
+
+  const filterData = data.filter((item, index) =>
+    item.toLocaleLowerCase().includes(search.toLocaleLowerCase()),
+  );
+
+  return (
+    <div style={{ padding: "1rem" }}>
+      <div
+        className=""
+        style={{
+          margin: "1rem 0",
+          // backgroundColor: "cyan",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <form
+          onSubmit={onSubmit}
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "1rem",
+          }}
+        >
+          <input
+            type="text"
+            value={query}
+            style={{
+              padding: "1rem",
+              fontSize: "18px",
+              outline: "none",
+              border: "none",
+              backgroundColor: "yellow",
+              color: "black",
+              borderRadius: "2rem",
+            }}
+            placeholder="Input data"
+            onChange={(e) => setQuery(e.target.value)}
+          />
+
+          <button
+            type="submit"
+            style={{
+              padding: "1rem",
+              fontSize: "18px",
+              outline: "none",
+              border: "none",
+              borderRadius: "2rem",
+              cursor: "pointer",
+            }}
+          >
+            Submit
+          </button>
+        </form>
+
+        <input
+          type="text"
+          value={search}
+          style={{
+            padding: "1rem",
+            fontSize: "18px",
+            outline: "none",
+            border: "none",
+            backgroundColor: "yellow",
+            color: "black",
+            borderRadius: "2rem",
+          }}
+          placeholder="Search"
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+      <div className="">
+        <ul
+          style={{
+            listStyle: "none",
+            padding: 0,
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+          }}
+        >
+          {filterData?.map((item, index) => (
+            <li
+              key={index}
+              style={{
+                backgroundColor: "orange",
+                padding: "1rem",
+                borderRadius: "2rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <div className="">{item}</div>
+              <button
+                style={{
+                  padding: "1rem",
+                  fontSize: "18px",
+                  outline: "none",
+                  border: "none",
+                  borderRadius: "3rem",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                }}
+                onClick={() => onDelete(item, index)}
+              >
+                Delete <Trash />
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default App;

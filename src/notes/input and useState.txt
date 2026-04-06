@@ -1,0 +1,30 @@
+import { useState } from "react";
+import GreetingCard from "./components/cards/GreetingCard";
+import ProductCard from "./components/cards/ProductCard";
+import { CircleMinus, CirclePlus } from "lucide-react";
+
+const App = () => {
+  const [query, setQuery] = useState("");
+  return (
+    <div style={{ padding: "1rem" }}>
+      {query !== "" && <h1>Query: {query}</h1>}
+
+      <input
+        type="text"
+        style={{
+          padding: "1rem",
+          fontSize: "18px",
+          outline: "none",
+          border: "none",
+          backgroundColor: "yellow",
+          color: "black",
+          borderRadius: "2rem",
+        }}
+        placeholder="Input data"
+        onChange={(e) => setQuery(e.target.value)}
+      />
+    </div>
+  );
+};
+
+export default App;

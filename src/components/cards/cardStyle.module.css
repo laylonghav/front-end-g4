@@ -1,0 +1,47 @@
+.card {
+  width: 400px;
+  background-color: gainsboro;
+  /* margin: 1rem; */
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 2px 0px gray;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(102%);
+}
+.image {
+  width: 100%;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.wrap {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  justify-content: center;
+}
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: darkblue;
+  cursor: pointer;
+  transform: scale(102%);
+}

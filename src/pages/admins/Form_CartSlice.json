@@ -1,0 +1,146 @@
+[
+  {
+    "name": "ASUS TUF Gaming A17",
+    "description": "Innovative design for ultimate performance and battery life.",
+    "qty": 1,
+    "price": 1099,
+    "discount": 20,
+    "status": false,
+    "updated_at": "2026-04-03T08:43:23.923000Z",
+    "created_at": "2026-03-06T08:45:11.390000Z",
+    "category_id": "69b1267260c7f8e16e05a112",
+    "brand_id": "69b3ccc1148490ca3002d263",
+    "image": "products/WhRmoP6VZobyKyUbaZju8fyqd6aNQWtMtThpB80e.jpg",
+    "id": "69aa9417b74db524e60252d2",
+    "image_url": "http://127.0.0.1:8000/storage/products/WhRmoP6VZobyKyUbaZju8fyqd6aNQWtMtThpB80e.jpg",
+    "category": {
+      "name": "Phone",
+      "description": "Good",
+      "updated_at": "2026-03-11T08:23:14.777000Z",
+      "created_at": "2026-03-11T08:23:14.777000Z",
+      "id": "69b1267260c7f8e16e05a112"
+    },
+    "brand": {
+      "name": "Apple",
+      "description": "Good",
+      "updated_at": "2026-03-13T08:41:04.554000Z",
+      "created_at": "2026-03-13T08:37:21.583000Z",
+      "id": "69b3ccc1148490ca3002d263"
+    },
+    "product_detail": {
+      "product_id": "69aa9417b74db524e60252d2",
+      "color": "black",
+      "mark_in": "USA",
+      "barcode": "iPhone17045352",
+      "updated_at": "2026-03-09T08:40:23.706000Z",
+      "created_at": "2026-03-09T08:40:23.706000Z",
+      "id": "69ae87777636c5c8a90d65c2"
+    }
+  },
+  {
+    "name": "MacBook Air 13",
+    "description": "Thin. Fast. Powerful and portable.",
+    "qty": 1,
+    "price": 1099,
+    "status": true,
+    "discount": 10,
+    "category_id": "69b129b760c7f8e16e05a114",
+    "updated_at": "2026-04-03T07:25:45.910000Z",
+    "created_at": "2026-03-11T08:40:25.617000Z",
+    "brand_id": "69b3ccc1148490ca3002d263",
+    "image": "products/E17RheIXpqh5n5y4QBNWpRW8pApdYbnOxh3Tt9wv.png",
+    "id": "69b12a7960c7f8e16e05a115",
+    "image_url": "http://127.0.0.1:8000/storage/products/E17RheIXpqh5n5y4QBNWpRW8pApdYbnOxh3Tt9wv.png",
+    "category": {
+      "name": "Computer",
+      "description": "Good",
+      "updated_at": "2026-03-11T08:37:11.467000Z",
+      "created_at": "2026-03-11T08:37:11.467000Z",
+      "id": "69b129b760c7f8e16e05a114"
+    },
+    "brand": {
+      "name": "Apple",
+      "description": "Good",
+      "updated_at": "2026-03-13T08:41:04.554000Z",
+      "created_at": "2026-03-13T08:37:21.583000Z",
+      "id": "69b3ccc1148490ca3002d263"
+    },
+    "product_detail": {
+      "product_id": "69b12a7960c7f8e16e05a115",
+      "color": "Black",
+      "mark_in": "USA",
+      "barcode": "Pro0785532134740",
+      "updated_at": "2026-03-16T08:41:40.211000Z",
+      "created_at": "2026-03-16T08:41:40.211000Z",
+      "id": "69b7c244ab78aea89f0d7863"
+    }
+  },
+  {
+    "name": "ASUS Vivobook S 14 OLED",
+    "description": "14” FHD OLED NanoEdge display Larger touchpad.",
+    "qty": 1,
+    "price": 1220,
+    "status": false,
+    "discount": 14,
+    "category_id": "69b129b760c7f8e16e05a114",
+    "brand_id": "69b3cf70148490ca3002d265",
+    "updated_at": "2026-04-03T07:26:59.947000Z",
+    "created_at": "2026-03-13T08:51:59.850000Z",
+    "image": "products/AjCRzghl6rdhy1bkPE4r2glLGLiH4JVAbKtFLYmz.png",
+    "id": "69b3d02f148490ca3002d266",
+    "image_url": "http://127.0.0.1:8000/storage/products/AjCRzghl6rdhy1bkPE4r2glLGLiH4JVAbKtFLYmz.png",
+    "category": {
+      "name": "Computer",
+      "description": "Good",
+      "updated_at": "2026-03-11T08:37:11.467000Z",
+      "created_at": "2026-03-11T08:37:11.467000Z",
+      "id": "69b129b760c7f8e16e05a114"
+    },
+    "brand": {
+      "name": "ASUS",
+      "description": "Good",
+      "updated_at": "2026-03-23T09:24:06.806000Z",
+      "created_at": "2026-03-13T08:48:48.093000Z",
+      "id": "69b3cf70148490ca3002d265"
+    },
+    "product_detail": {
+      "product_id": "69b3d02f148490ca3002d266",
+      "color": "Black",
+      "mark_in": "USA",
+      "barcode": "0009993333",
+      "updated_at": "2026-03-16T08:44:53.384000Z",
+      "created_at": "2026-03-16T08:44:53.384000Z",
+      "id": "69b7c305ab78aea89f0d7864"
+    }
+  },
+  {
+    "name": "ASUS ROG Strix G16",
+    "description": "Feature stacked. Value packed.",
+    "qty": 1,
+    "price": "599",
+    "status": true,
+    "discount": "10",
+    "category_id": "69b1267260c7f8e16e05a112",
+    "brand_id": "69b3ccc1148490ca3002d263",
+    "image": "products/mR94eQ9qgVTOzicaOxIfCQ4D428tmmt2k83QxmZT.png",
+    "updated_at": "2026-04-03T08:43:35.844000Z",
+    "created_at": "2026-03-18T07:58:23.968000Z",
+    "id": "69ba5b1fcb04df6c0f075c22",
+    "image_url": "http://127.0.0.1:8000/storage/products/mR94eQ9qgVTOzicaOxIfCQ4D428tmmt2k83QxmZT.png",
+    "category": {
+      "name": "Phone",
+      "description": "Good",
+      "updated_at": "2026-03-11T08:23:14.777000Z",
+      "created_at": "2026-03-11T08:23:14.777000Z",
+      "id": "69b1267260c7f8e16e05a112"
+    },
+    "brand": {
+      "name": "Apple",
+      "description": "Good",
+      "updated_at": "2026-03-13T08:41:04.554000Z",
+      "created_at": "2026-03-13T08:37:21.583000Z",
+      "id": "69b3ccc1148490ca3002d263"
+    },
+    "product_detail": null
+  }
+]

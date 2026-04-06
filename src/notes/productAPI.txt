@@ -1,0 +1,49 @@
+import { useEffect, useState } from "react";
+import ProductAPICard from "./components/cards/ProductAPICard";
+
+const App = () => {
+  const [product, setProduct] = useState([]);
+
+  const fetchingData = async () => {
+    const res = await fetch("https://dummyjson.com/products");
+    const data = await res.json();
+    if (data) {
+      setProduct(data?.products);
+    }
+    console.log("API Product: ", data);
+  };
+
+  function btnAddToCart(item) {
+    alert(item?.title);
+    console.log("Item card: ", item);
+  }
+
+  useEffect(() => {
+    fetchingData();
+  }, []);
+  return (
+    <div style={{ padding: "1rem" }}>
+      {/* <h1>{product[0]?.title}</h1>
+      <h1 style={{color:"red"}}>{product[0]?.description}</h1> */}
+      <div
+        style={{
+          // backgroundColor: "yellow",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "1rem",
+        }}
+      >
+        {product?.map((item, index) => (
+          <ProductAPICard
+            key={index}
+            index={index}
+            data={{ ...item, btnAddToCart: () => btnAddToCart(item) }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default App;

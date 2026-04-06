@@ -1,0 +1,89 @@
+ const data = [
+    {
+      name: "iPhone 17 Pro",
+      description:
+        "Innovative design for ultimate performance and battery life.",
+      qty: 10,
+      price: 1099,
+      image:
+        "https://www.apple.com/v/iphone/home/ch/images/overview/select-variant/iphone_17_pro__diodsie2ooom_medium_2x.jpg",
+    },
+    {
+      name: "iPhone Air",
+      description: "The thinnest iPhone ever. With the power of pro inside.",
+      qty: 14,
+      price: 999,
+      image:
+        "https://www.apple.com/v/iphone/home/ch/images/overview/select-variant/iphone_air__f0t56fef3oey_medium_2x.jpg",
+    },
+  ];
+
+============================================
+<div className="">
+        {data && (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              gap: "1rem",
+              // backgroundColor: "red",
+              flexWrap:"wrap"
+            }}
+          >
+            {data?.map((item, index) => (
+              <ProductCard
+                key={index}
+                data={{ ...item, btnAddToCard: () => btnAddToCard(item) }}
+              />
+            ))}
+          </div>
+        )}
+</div>
+
+
+==============================================
+
+  const onClickMe = () => {
+    alert("Clicked me");
+  };
+  const btnAddToCard = (item) => {
+    console.log("Item ", item);
+    alert(item?.name);
+  };
+
+  function onChangeInput(e) {
+    console.log("Data input from input tag : ", e.target.value);
+  }
+
+ {/* <h1 style={{ color: "red" }}>Hello react js</h1>
+      <GreetingCard data={data} />
+
+      <button
+        style={{
+          padding: "1rem",
+          fontSize: "18px",
+          outline: "none",
+          border: "none",
+          borderRadius: "2rem",
+          color: "red",
+          cursor: "pointer",
+        }}
+        onClick={onClickMe}
+      >
+        Click me
+      </button>
+
+      <input
+        style={{
+          padding: "1rem",
+          fontSize: "18px",
+          outline: "none",
+          border: "none",
+          borderRadius: "2rem",
+          backgroundColor: "gray",
+          color: "white",
+        }}
+        onChange={(e) => onChangeInput(e)}
+        type="text"
+      /> */}
